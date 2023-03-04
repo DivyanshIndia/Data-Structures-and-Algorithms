@@ -1,0 +1,9 @@
+checking if (target - current value in hash ) is present in hash or not if yes two sum is present else not present
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        letsFind = {}
+        for i, n in enumerate(nums):
+            if target - n in letsFind:
+                return letsFind[target - n], i
+            letsFind[n] = i
