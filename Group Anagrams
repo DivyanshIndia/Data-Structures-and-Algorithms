@@ -1,0 +1,11 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        resdict = defaultdict(list)
+    
+        for s in strs:
+            isana = [0]*26
+            for c in s:
+                isana[ord(c)- ord("a")] += 1
+            resdict[tuple(isana)].append(s)
+        return resdict.values()
+            
