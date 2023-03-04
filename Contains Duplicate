@@ -1,9 +1,8 @@
-```
-def containsDuplicate(self, nums: List[int]) -> bool:
+
+def containsDuplicate(nums: List[int]) -> bool:
         usingHash = {}
         for i in nums:
             if i in usingHash:
                 return True
             usingHash[i] = 0
         return False
-```
