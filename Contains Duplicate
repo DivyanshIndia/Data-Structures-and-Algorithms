@@ -1,4 +1,5 @@
-# Checking if the array of nums contains duplicates or not using hashmap with time complexity O(1) and space complexity O(n)
+Checking if the array of nums contains duplicates or not using hashmap with time complexity O(1) and space complexity O(n)
+
 def containsDuplicate(nums: List[int]) -> bool:
         usingHash = {}
         for i in nums:
